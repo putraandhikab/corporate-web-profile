@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Profile - Logistic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-white overflow-x-hidden leading-relaxed scroll-smooth bg-gray-950">
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center text-center overflow-hidden" id="home">
+    <img src="../corporate-web/img/image.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Hero Background"/>
+    <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full flex justify-between items-center px-12 py-6 transition-all duration-300 z-50 bg-transparent">
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#client" class="nav-link">Clients</a></li>
+      </ul>
+
+      <a href="#"><img src="../corporate-web/img/logo.png" class="w-32 h-auto" alt="Logo"></a>
+
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#service" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="relative z-20 max-w-4xl px-5 animate-fadeInUp">
+      <div class="w-[400px] mx-auto">
+        <h1 class="text-[3.5rem] font-bold text-left drop-shadow-md">On <span class="text-green-600">Time</span></h1>
+        <h1 class="text-[3.5rem] font-bold -mt-6 mb-5 text-right drop-shadow-md">Every <span class="text-green-600">Time</span></h1>
+      </div>
+      <p class="text-xl opacity-90 max-w-2xl mx-auto mb-10">Kami adalah perusahaan logistik yang berkomitmen mengantarkan barang Anda dengan cepat, aman, dan tepat waktu.</p>
+      <a href="#contact" class="inline-block px-10 py-4 bg-green-600 text-white rounded-full font-semibold text-lg shadow-lg hover:bg-green-700 hover:-translate-y-1 transform transition">Let's Connect</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="service" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-5 text-center">
+      <h2 class="text-4xl font-bold mb-12 text-green-500">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Land -->
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <img src="../corporate-web/img/truck.jpg" alt="Land Logistics" class="w-full h-48 object-cover rounded-xl mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Land Freight</h3>
+          <p class="opacity-80">Pengiriman darat cepat, aman, dan efisien dengan jaringan transportasi kami.</p>
+        </div>
+        <!-- Sea -->
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <img src="../corporate-web/img/ship.jpg" alt="Sea Logistics" class="w-full h-48 object-cover rounded-xl mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Sea Freight</h3>
+          <p class="opacity-80">Layanan logistik laut dengan cakupan internasional dan harga kompetitif.</p>
+        </div>
+        <!-- Air -->
+        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+          <img src="../corporate-web/img/plane.jpg" alt="Air Logistics" class="w-full h-48 object-cover rounded-xl mb-4">
+          <h3 class="text-2xl font-semibold mb-2">Air Freight</h3>
+          <p class="opacity-80">Pengiriman udara super cepat untuk kebutuhan mendesak Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="client" class="py-20 bg-gray-950">
+    <div class="container mx-auto px-5 text-center">
+      <h2 class="text-4xl font-bold mb-12 text-green-500">Our Clients</h2>
+      <div class="overflow-hidden relative">
+        <div class="flex space-x-16 animate-marquee">
+          <img src="../corporate-web/img/client/Astra-Logo.png" alt="Client 1" class="mx-auto h-20 grayscale hover:grayscale-0 transition"/>
+          <img src="../corporate-web/img/client/Pertamina-Logo.png" alt="Client 2" class="mx-auto h-20 grayscale hover:grayscale-0 transition"/>
+          <img src="../corporate-web/img/client/Unilever-Logo.png" alt="Client 3" class="mx-auto h-20 grayscale hover:grayscale-0 transition"/>
+          <img src="../corporate-web/img/client/Nestlé-Logo.png" alt="Client 4" class="mx-auto h-20 grayscale hover:grayscale-0 transition"/>
+          <!-- looping image -->
+          <img src="../corporate-web/img/client/Astra-Logo.png" alt="Client 1" class="h-20 grayscale hover:grayscale-0 transition"/>
+          <img src="../corporate-web/img/client/Pertamina-Logo.png" alt="Client 2" class="h-20 grayscale hover:grayscale-0 transition"/>
+          <img src="../corporate-web/img/client/Unilever-Logo.png" alt="Client 3" class="h-20 grayscale hover:grayscale-0 transition"/>
+          <img src="../corporate-web/img/client/Nestlé-Logo.png" alt="Client 4" class="h-20 grayscale hover:grayscale-0 transition"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-5 flex flex-col md:flex-row items-center gap-10">
+      <img src="../corporate-web/img/office.jpg" alt="About Us" class="w-full md:w-1/2 rounded-2xl shadow-lg">
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold mb-6 text-green-500">About Us</h2>
+        <p class="opacity-80 mb-4">Kami adalah perusahaan logistik yang berdiri sejak 2010, melayani berbagai kebutuhan pengiriman darat, laut, dan udara di dalam dan luar negeri. Dengan pengalaman lebih dari 10 tahun, kami berkomitmen untuk memberikan layanan terbaik.</p>
+        <p class="opacity-80">Kepercayaan pelanggan adalah prioritas kami, dan kepuasan Anda adalah motivasi kami.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-950">
+    <div class="container mx-auto px-5">
+      <h2 class="text-4xl font-bold mb-12 text-center text-green-500">Contact Us</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Map -->
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- Form -->
+        <form action="mailto:yourcompany@email.com" method="POST" enctype="text/plain" class="bg-gray-900 p-8 rounded-2xl shadow-lg">
+          <div class="mb-4">
+            <label class="block mb-2 text-sm font-semibold">Name</label>
+            <input type="text" name="name" required class="w-full p-3 rounded-lg text-black">
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2 text-sm font-semibold">Email</label>
+            <input type="email" name="email" required class="w-full p-3 rounded-lg text-black">
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2 text-sm font-semibold">Message</label>
+            <textarea name="message" rows="5" required class="w-full p-3 rounded-lg text-black"></textarea>
+          </div>
+          <button type="submit" class="px-6 py-3 bg-green-600 text-white rounded-full font-semibold hover:bg-green-700 transition">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 text-center text-gray-400">
+    <div class="container mx-auto px-5">
+      <p class="mb-2">&copy; 2025 Global Cargo Express. All Rights Reserved.</p>
+      <p class="mb-2">Jl. Gatot Subroto No. 123, Jakarta, Indonesia</p>
+      <div class="flex justify-center space-x-6 mb-2">
+        <a href="#" class="hover:text-green-500">Facebook</a>
+        <a href="#" class="hover:text-green-500">Instagram</a>
+        <a href="#" class="hover:text-green-500">TikTok</a>
+      </div>
+      <p>Email: info@globalcargoexpress.com</p>
+    </div>
+  </footer>
+
+  <!-- Navbar Scroll Effect -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-black/80','shadow-lg','py-4');
+        navbar.classList.remove('bg-transparent','py-6');
+      } else {
+        navbar.classList.remove('bg-black/80','shadow-lg','py-4');
+        navbar.classList.add('bg-transparent','py-6');
+      }
+    });
+  </script>
+
+  <!-- Custom Animation -->
+  <style>
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link:hover {
+      color: #22c55e;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #22c55e;
+      transition: width .3s;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 10s linear infinite;
+    }
+  </style>
+</body>
+</html>
